@@ -1,0 +1,18 @@
+{
+  "name": "objet",
+  "version": "1.0.0",
+  "description": "Test API JS sur mon Photon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "virginie",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.12",
+    "particle-api-js": "^6.6.2",
+    "socket.io": "^2.0.3"
+  }
+}

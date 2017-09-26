@@ -1,0 +1,28 @@
+
+	<h1> Voici la liste des mes événements </h1>
+
+<div class="row">
+	<!--
+  	<ul class="list-group">
+
+		<li class="list-group-item" ng-repeat="n in socket">
+			{{n.coreid}}&nbsp;{{n.data}}
+		</li>
+	</ul>
+	-->
+	<table class="table table-bordered table-striped">
+		<thead class="thead-inverse">
+	    	<tr>
+	      		<th>CoreId</th>
+	      		<th>Data</th>
+	      		<th>Published_at</th>	      
+	    	</tr>
+	  	</thead>
+	  	<tbody>
+	    	<tr ng-repeat="n in socket">
+	    		<td>{{n.coreid}}</td>
+      			<td>{{n.data}}</td>
+      			<td>{{n.published_at}}</td>
+    		</tr>
+    	</tbody>
+</div>
