@@ -1,0 +1,22 @@
+<h1> Voici la liste des 3 derniers Devices </h1>
+
+<div class="row">
+	
+	<table class="table table-bordered table-striped">
+		<thead class="thead-inverse">
+	    	<tr>
+	      		<th>Id</th>
+	      		<th>Name</th>
+	      		<th>last_heard</th>
+	      		<th> </th>
+	    	</tr>
+	  	</thead>
+	  	<tbody>
+	    	<tr ng-repeat="n in liste">
+	    		<td>{{n.id}}</td>
+      			<td>{{n.name}}</td>
+      			<td>{{n.last_heard}}</td>
+      			<td> Détail </td>
+    		</tr>
+    	</tbody>
+</div>

@@ -8,6 +8,16 @@ app.config(['$routeProvider', '$locationProvider',
                 controller: "logCtrl"
                 
             })
+            .when('/particle', {
+                templateUrl: "./static/views/device.html",
+                controller: "listeCtrl",
+                resolve:{
+                    liste: function(listeFactory){
+                        return listeFactory.query();
+                    }
+                }
+                
+            })
             .otherwise({
                 redirectTo: '/',
 
