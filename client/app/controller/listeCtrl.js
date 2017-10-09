@@ -1,4 +1,4 @@
-app.controller("listeCtrl", function($scope,$listeFactory) {
+/* app.controller("listeCtrl", function($scope,$listeFactory) {
 
 	console.log("listeCtrl");
 	// je déclare un tableau dans le scope pour stocker mes infos
@@ -16,4 +16,13 @@ app.controller("listeCtrl", function($scope,$listeFactory) {
         $scope.socket.push(socket);        
         $scope.$apply();
     });
+});
+
+*/ 
+
+// $rootScope et $deviceFactory
+app.controller('listeCtrl',function($scope, $rootScope, liste, deviceFactory){
+
+	$scope.Devices = liste;
+	
 });
